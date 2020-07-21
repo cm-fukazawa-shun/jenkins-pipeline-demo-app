@@ -5,14 +5,14 @@ files:
     destination: /web/
 hooks:
   AfterInstall:
-    - location: scripts/mkdir.sh
+    - location: sample-app/scripts/mkdir.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/start_flask.sh
+    - location: sample-app/scripts/start_flask.sh
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: scripts/stop_flask1.sh
+    - location: sample-app/scripts/stop_flask1.sh
       timeout: 300
       runas: root
